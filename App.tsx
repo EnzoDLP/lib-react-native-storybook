@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 function App() {
   return (
@@ -10,16 +11,16 @@ function App() {
 
 let AppEntryPoint = App;
 
-if (process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true") {
-  AppEntryPoint = require("./.rnstorybook").default;
+if (process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === 'true') {
+  AppEntryPoint = require('./.rnstorybook').default;
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
