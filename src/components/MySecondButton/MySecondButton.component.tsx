@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import IconFileCheckSolid from '../Icons/IconFileCheckSolid.component';
+import ProgressBar from '../ProgressBar/ProgressBar.component';
 
 interface MySecondButtonProps {
   onPress: () => void;
@@ -11,7 +11,7 @@ export const MySecondButton = ({ onPress, text }: MySecondButtonProps) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <Text style={styles.text}>{text}</Text>
-      <IconFileCheckSolid />
+      <ProgressBar progress={0.1} />
     </TouchableOpacity>
   );
 };
