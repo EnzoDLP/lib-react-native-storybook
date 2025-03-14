@@ -7,6 +7,7 @@ interface MySecondButtonProps {
   text: string;
 }
 
+/* TODO Les import d'icon bug quand deploy */
 export const MySecondButton = ({ onPress, text }: MySecondButtonProps) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
