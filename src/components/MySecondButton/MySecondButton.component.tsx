@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import IconFileCheckSolid from '../Icons/IconFileCheckSolid.component';
 
 interface MySecondButtonProps {
   onPress: () => void;
@@ -10,6 +11,7 @@ export const MySecondButton = ({ onPress, text }: MySecondButtonProps) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
       <Text style={styles.text}>{text}</Text>
+      <IconFileCheckSolid />
     </TouchableOpacity>
   );
 };
